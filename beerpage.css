@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Mallanna", sans-serif;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   background: url(beer.png);
   background-size: cover;
