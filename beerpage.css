@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mallanna", sans-serif;
+}
+
+#right-side {
+  display: none;
+}
+body {
+  background: url(beer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+}
+.menubar {
+  display: flex;
+  flex-direction: row;
+}
+.header-menu {
+  padding-left: 20px;
+}
+.icon {
+  align-self: end;
+}
+.h2 {
+  font-size: 25px;
+  color: rgb(197, 197, 197);
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.search-area {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.search-place {
+  border: 1px solid;
+  border-radius: 15px;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.beer-content {
+  margin: 40px 0 10px 0;
+  padding: 0 10px;
+  overflow: scroll;
+  height: 100%;
+}
+.beer-content::-webkit-scrollbar {
+  display: none;
+}
+.scroll-beer,
+.scroll-food,
+.scroll-koktail,
+.scroll-coffee,
+.scroll-softdrink,
+.scroll-shot,
+.scroll-snack,
+.scroll-wiskey {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.beer-content > div:not(:first-child) {
+  display: none;
+}
+.align-content {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-radius: 15px;
+}
+.center-content {
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: rgb(39, 24, 24);
+  padding: 0 5px;
+  border-radius: 15px;
+}
+/* switcher css kodları*/
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 10px;
+  margin: 10px 10px 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider.eng:before {
+  background-color: rgba(0, 0, 0);
+  top: 1px;
+  content: "Eng";
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  height: 18px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 18px;
+  border-radius: 10px;
+}
+input:checked + .slider.eng:before {
+  transform: translateX(18px);
+  content: "Tr";
+}
+.slider.tr:before {
+  background-color: rgba(0, 0, 0);
+  top: 1px;
+  content: "Tr";
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  height: 18px;
+  left: 20px;
+  position: absolute;
+  transition: 0.4s;
+  width: 18px;
+  border-radius: 10px;
+}
+
+input:checked + .slider.tr:before {
+  transform: translateX(-18px);
+  content: "Eng";
+}
+.button-containers {
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+  gap: 15px;
+  padding: 0px 15px;
+  margin-top: 40px;
+}
+.food-containers {
+  white-space: nowrap;
+  display: none;
+  gap: 15px;
+  margin-top: 10px;
+  overflow: scroll;
+  padding: 0 10px;
+}
+.food-containers::-webkit-scrollbar {
+  display: none;
+}
+.button-containers::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons {
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+  padding: 0 15px;
+}
+#explanation {
+  font-size: 12px;
+}
+.buttons.selected {
+  color: rgb(255, 255, 255);
+  background-color: black;
+  font-size: 18px;
+  border: 1px solid;
+  border-color: white;
+}
+.food-buttons {
+  border: none;
+  border-radius: 9px;
+  padding: 0 5px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+}
+.leos2024 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}

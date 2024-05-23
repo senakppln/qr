@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mallanna&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="beerpage.css" />
+    <script src="beerjs.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="menubar">
+          <div class="header-menu">
+            <a href="trbeerpage.html" class="h2">ANA MENÜ</a>
+          </div>
+          <div class="icon">
+            <img src="indexhtmlphotos\logo.svg" alt="logo" />
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="translate-slider">
+            <label class="switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="slider eng"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-containers">
+        <div>
+          <button class="buttons" data-category="beer">Biralar</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="food">Yiyecekler</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="koktail">Kokteyller</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="wiskey">Ağır Alkoller</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="shot">Shotlar</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="snack">Çerezler</button>
+        </div>
+        <div>
+          <button class="buttons" data-category="softdrink">
+            Alkolsüz İçecekler
+          </button>
+        </div>
+        <div>
+          <button class="buttons" data-category="coffee">Kahveler</button>
+        </div>
+      </div>
+      <div class="food-containers">
+        <div>
+          <button class="food-buttons" onclick="scrollToContent('aperatifler')">
+            Aperatifler
+          </button>
+        </div>
+        <div>
+          <button
+            class="food-buttons"
+            onclick="scrollToContent('ana-yemekler')"
+          >
+            ana yemekler
+          </button>
+        </div>
+        <div>
+          <button class="food-buttons" onclick="scrollToContent('burgerler')">
+            burgerler
+          </button>
+        </div>
+        <div>
+          <button class="food-buttons" onclick="scrollToContent('makarnalar')">
+            makarnalar
+          </button>
+        </div>
+        <div>
+          <button class="food-buttons" onclick="scrollToContent('salatalar')">
+            salatalar
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="beer-content">
+      <!-- biralar kısmı -->
+      <div class="scroll-beer">
+        <div class="align-content">
+          <div>Efes Fıçı 50Cl</div>
+          <div>130TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Fıçı 33Cl</div>
+          <div>125TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Pilsen 50Cl</div>
+          <div>140TL</div>
+        </div>
+
+        <div class="align-content">
+          <div>Efes Malt 50Cl</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Özel Seri 50Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Bomonti Filtresiz 50 Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Glutensiz 50Cl</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Winter Blue 50Cl</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Efes Reserve 50Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Belfast 50Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Becks 50Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Bud 50 Cl</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Becks 33Cl</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Bud 33Cl</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Amsterdam 50Cl</div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>Miller 33Cl</div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>Corona 35Cl</div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>Duvel 33Cl</div>
+          <div>250TL</div>
+        </div>
+        <div class="align-content">
+          <div>Erdinger 33Cl</div>
+          <div>250TL</div>
+        </div>
+      </div>
+      <!-- yiyecekler kısmı -->
+
+      <div class="scroll-food">
+        <div class="center-content" id="aperatifler">
+          <div>Aperatifler</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Bira Kayıntısı <br />
+            <span id="explanation">
+              (patates, soğan halkası, sosis, hellim, çıtır tavuk )
+            </span>
+          </div>
+          <div>185TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Çıtır Tavuk <br />
+            <span id="explanation"> (patates kızartması, çıtır tavuk ) </span>
+          </div>
+          <div>160TL</div>
+        </div>
+        <div class="align-content">
+          <div>Patates Kızartması</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Parmesanlı Patates Kızartması</div>
+          <div>150TL</div>
+        </div>
+        <div class="center-content" id="ana-yemekler">
+          <div>Ana Yemekler</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Kremalı Köri Soslu Tavuk <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Kremalı Barbekü Soslu Tavuk <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Kremalı Barbekü Soslu Tavuk <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Tavuk Şnitzel <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Tavuk Wrap <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Tatlı Ekşi Tavuk <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            General Tso Tavuk (Acılı) <br />
+            <span id="explanation">
+              (patates kızartması veya Pilav, Salata )
+            </span>
+          </div>
+          <div>200TL</div>
+        </div>
+        <div class="center-content" id="burgerler">
+          <div>Burgerler</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Tavuk Burger <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>250TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Cheese Burger <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Şefin Burgeri <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Barbekü Burger <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Akdeniz Burger <br />
+            <span id="explanation"> (patates kızartması) </span>
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="center-content" id="makarnalar">
+          <div>Makarnalar</div>
+        </div>
+        <div class="align-content">
+          <div>Fettucini Alfredo</div>
+          <div>150TL</div>
+        </div>
+        <div class="align-content">
+          <div>Penne Arabiata</div>
+          <div>150TL</div>
+        </div>
+        <div class="align-content">
+          <div>Tagliatelle</div>
+          <div>150TL</div>
+        </div>
+        <div class="center-content" id="salatalar">
+          <div>Salatalar</div>
+        </div>
+        <div class="align-content">
+          <div>Ton Balıklı Salata</div>
+          <div>150TL</div>
+        </div>
+        <div class="align-content">
+          <div>Izgara Hellim Salata</div>
+          <div>150TL</div>
+        </div>
+        <div class="align-content">
+          <div>Tavuklu Sezar Salata</div>
+          <div>150TL</div>
+        </div>
+      </div>
+      <!-- Koktail kısmı -->
+
+      <div class="scroll-koktail">
+        <div class="align-content">
+          <div>Margarita</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Cosmopolitan</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Cin Daisey</div>
+          <div>300TL</div>
+        </div>
+
+        <div class="align-content">
+          <div>Mojito</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Long Island</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Lynychberg Lemonade</div>
+          <div>300TL</div>
+        </div>
+      </div>
+
+      <div class="scroll-wiskey">
+        <div class="align-content">
+          <div>
+            Viski <br />
+            Chivas/Red Label/Jack Daniels
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Vodka <br />
+            Redbull/Vişne/Tonik
+          </div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>
+            Cin <br />
+            Soda/Tonik
+          </div>
+          <div>300TL</div>
+        </div>
+      </div>
+      <!-- shot kısmı -->
+
+      <div class="scroll-shot">
+        <div class="align-content">
+          <div>Jager Shot</div>
+          <div>120TL</div>
+        </div>
+        <div class="align-content">
+          <div>Tekila Shot</div>
+          <div>120TL</div>
+        </div>
+        <div class="align-content">
+          <div>Cardinal Melon</div>
+          <div>120TL</div>
+        </div>
+
+        <div class="align-content">
+          <div>Votka Shot</div>
+          <div>120TL</div>
+        </div>
+        <div class="align-content">
+          <div>Viski Shot</div>
+          <div>120TL</div>
+        </div>
+      </div>
+      <!-- çerez kısmı -->
+
+      <div class="scroll-snack">
+        <div class="align-content">
+          <div>Tuzlu Fıstık</div>
+          <div>35TL</div>
+        </div>
+        <div class="align-content">
+          <div>Karışık çerez</div>
+          <div>65TL</div>
+        </div>
+        <div class="align-content">
+          <div>Cips</div>
+          <div>40TL</div>
+        </div>
+        <div class="align-content">
+          <div>Popcorn</div>
+          <div>70TL</div>
+        </div>
+      </div>
+      <!-- alkolsüz içecek kısmı -->
+
+      <div class="scroll-softdrink">
+        <div class="align-content">
+          <div>Coca Cola</div>
+          <div>65TL</div>
+        </div>
+        <div class="align-content">
+          <div>Coca Cola Zero</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Sprite</div>
+          <div>125TL</div>
+        </div>
+        <div class="align-content">
+          <div>Fanta</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Meyve Suyu(Karışık, Vişne)</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Sade Soda</div>
+          <div>145TL</div>
+        </div>
+        <div class="align-content">
+          <div>Churchill</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Redbull</div>
+          <div>140TL</div>
+        </div>
+        <div class="align-content">
+          <div>Su</div>
+          <div>145TL</div>
+        </div>
+      </div>
+      <!-- kahveler kısmı -->
+
+      <div class="scroll-coffee">
+        <div class="align-content">
+          <div>Latte</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Americano</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Espresso</div>
+          <div>300TL</div>
+        </div>
+
+        <div class="align-content">
+          <div>Türk Kahvesi</div>
+          <div>300TL</div>
+        </div>
+        <div class="align-content">
+          <div>Coppichino</div>
+          <div>300TL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leos2024">Leos 2024</div>
+  </body>
+</html>
