@@ -50,6 +50,7 @@ body {
   padding: 0 10px;
   overflow: scroll;
   height: 100%;
+  display: flex;
 }
 .beer-content::-webkit-scrollbar {
   display: none;
